@@ -1,0 +1,42 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Robustness Checks - Subsample Analysis}
+\begin{tabular}{l*{8}{c}}
+\hline\hline
+            &\multicolumn{8}{c}{Dependent Variable: Wager (\$)}                                                                                                                             \\
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}\\
+            &\multicolumn{1}{c}{\shortstack{\\Prev. Clue\\Diff. Cat}}&\multicolumn{1}{c}{\shortstack{Not 1st\\Clue}}&\multicolumn{1}{c}{\shortstack{Score=\\Max\\Wager}}&\multicolumn{1}{c}{\shortstack{Nonzero\\Score\\Change}}&\multicolumn{1}{c}{\shortstack{\\Reg.\\Play}}&\multicolumn{1}{c}{\shortstack{\\Post\\2001}}&\multicolumn{1}{c}{\shortstack{J\\Round}}&\multicolumn{1}{c}{\shortstack{DJ\\Round}}\\
+\hline
+Prev. Clue Score Change (\$)&      0.0951\sym{**} &       0.125\sym{***}&       0.123\sym{***}&      0.0396         &      0.0818\sym{***}&       0.119\sym{***}&      0.0512         &       0.128\sym{***}\\
+            &      (2.66)         &      (5.99)         &      (5.54)         &      (1.55)         &      (3.50)         &      (4.55)         &      (1.45)         &      (5.07)         \\
+[1em]
+Init. Score (\$)&       0.612\sym{***}&       0.495\sym{***}&       0.211\sym{***}&       0.519\sym{***}&       0.500\sym{***}&       0.560\sym{***}&       0.291\sym{***}&       0.406\sym{***}\\
+            &      (4.82)         &     (10.30)         &     (37.29)         &      (9.82)         &      (9.55)         &      (9.04)         &      (6.51)         &      (6.01)         \\
+[1em]
+Maximum Wager (\$)&      -0.374\sym{**} &      -0.290\sym{***}&                     &      -0.307\sym{***}&      -0.296\sym{***}&      -0.338\sym{***}&     -0.0493         &      -0.181\sym{**} \\
+            &     (-2.92)         &     (-5.99)         &                     &     (-5.77)         &     (-5.61)         &     (-5.42)         &     (-1.08)         &     (-2.65)         \\
+[1em]
+Init. Clue Value (\$)&       0.176         &       0.195\sym{***}&       0.174\sym{***}&       0.252\sym{***}&       0.282\sym{***}&       0.192\sym{**} &       0.387\sym{***}&       0.198\sym{***}\\
+            &      (1.79)         &      (4.46)         &      (3.75)         &      (5.13)         &      (5.68)         &      (2.71)         &      (5.30)         &      (3.62)         \\
+[1em]
+Dist. to Lead Opponent (\$)&      -0.137\sym{***}&      -0.110\sym{***}&      -0.117\sym{***}&      -0.110\sym{***}&      -0.110\sym{***}&      -0.121\sym{***}&     -0.0450\sym{***}&      -0.126\sym{***}\\
+            &    (-14.16)         &    (-29.79)         &    (-29.76)         &    (-27.30)         &    (-26.74)         &    (-23.67)         &     (-5.23)         &    (-27.74)         \\
+[1em]
+Double Jeopardy Round&      -264.8\sym{**} &      -202.4\sym{***}&      -294.6\sym{***}&      -211.8\sym{***}&      -236.4\sym{***}&      -393.5\sym{***}&                     &                     \\
+            &     (-2.59)         &     (-5.12)         &     (-6.77)         &     (-4.99)         &     (-5.33)         &     (-4.85)         &                     &                     \\
+[1em]
+\# of Clue in Round&      -39.68\sym{***}&      -28.67\sym{***}&      -33.34\sym{***}&      -27.75\sym{***}&      -28.06\sym{***}&      -40.96\sym{***}&      -9.060\sym{***}&      -44.31\sym{***}\\
+            &     (-8.48)         &    (-16.62)         &    (-17.42)         &    (-14.86)         &    (-14.71)         &    (-14.78)         &     (-4.15)         &    (-17.86)         \\
+[1em]
+Constant    &       947.8\sym{***}&       740.5\sym{***}&       929.6\sym{***}&       691.3\sym{***}&       839.8\sym{***}&      1129.7\sym{***}&      -107.0         &      1166.4\sym{***}\\
+            &      (4.22)         &      (7.47)         &      (8.48)         &      (6.52)         &      (7.39)         &      (5.19)         &     (-1.28)         &      (9.44)         \\
+[1em]
+All Regression (5) Controls&         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+\hline
+\(N\)       &        2416         &       13858         &       12730         &       12135         &       10902         &        8692         &        4602         &        9286         \\
+\(R^{2}\)   &       0.371         &       0.344         &       0.319         &       0.353         &       0.344         &       0.253         &       0.390         &       0.261         \\
+\hline\hline
+\multicolumn{9}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

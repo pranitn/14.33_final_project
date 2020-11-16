@@ -1,0 +1,47 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Main OLS Regressions of Wager on Score Change from Previous Clue}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{5}{c}{Dependent Variable: Wager (\$)}                                                           \\
+            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\hline
+Prev. Clue Score Change (\$)&       0.745\sym{***}&       0.110\sym{***}&       0.122\sym{***}&       0.122\sym{***}&       0.125\sym{***}\\
+            &     (35.95)         &      (5.36)         &      (5.85)         &      (5.87)         &      (6.00)         \\
+Init. Score (\$)&                     &       0.477\sym{***}&       0.491\sym{***}&       0.494\sym{***}&       0.492\sym{***}\\
+            &                     &     (10.05)         &     (10.32)         &     (10.40)         &     (10.37)         \\
+Maximum Wager (\$)&                     &      -0.247\sym{***}&      -0.279\sym{***}&      -0.289\sym{***}&      -0.287\sym{***}\\
+            &                     &     (-5.18)         &     (-5.84)         &     (-6.05)         &     (-6.00)         \\
+Init. Clue Value (\$)&                     &       0.157\sym{***}&       0.331\sym{***}&       0.196\sym{***}&       0.194\sym{***}\\
+            &                     &      (4.87)         &      (8.78)         &      (4.49)         &      (4.45)         \\
+Dist. to Lead Opponent (\$)&                     &      -0.128\sym{***}&      -0.114\sym{***}&      -0.109\sym{***}&      -0.110\sym{***}\\
+            &                     &    (-37.61)         &    (-31.35)         &    (-29.76)         &    (-29.81)         \\
+Double Jeopardy Round&                     &      -361.5\sym{***}&      -324.2\sym{***}&      -198.7\sym{***}&      -201.9\sym{***}\\
+            &                     &    (-11.23)         &     (-9.52)         &     (-5.04)         &     (-5.12)         \\
+\# of Clue in Round&                     &      -37.47\sym{***}&      -30.17\sym{***}&      -28.53\sym{***}&      -28.61\sym{***}\\
+            &                     &    (-23.33)         &    (-17.74)         &    (-16.62)         &    (-16.62)         \\
+\# of Prior DDs in Game&                     &                     &      -135.7\sym{***}&      -134.7\sym{***}&      -135.7\sym{***}\\
+            &                     &                     &     (-6.05)         &     (-6.02)         &     (-6.06)         \\
+\# of Clues Shown in Cat.&                     &                     &      -165.5\sym{***}&      -139.5\sym{***}&      -140.3\sym{***}\\
+            &                     &                     &    (-11.60)         &     (-9.40)         &     (-9.45)         \\
+\# of Clues Answered in Cat.&                     &                     &       167.9\sym{***}&       163.9\sym{***}&       164.6\sym{***}\\
+            &                     &                     &      (4.73)         &      (4.62)         &      (4.64)         \\
+\# of Clues Correct in Cat.&                     &                     &      -75.34\sym{*}  &      -69.94         &      -69.98         \\
+            &                     &                     &     (-2.07)         &     (-1.93)         &     (-1.93)         \\
+Lifetime Clue \# for Player&                     &                     &       0.350\sym{***}&       0.331\sym{***}&       0.313\sym{***}\\
+            &                     &                     &      (6.28)         &      (5.91)         &      (5.59)         \\
+Female      &                     &                     &                     &      -79.32\sym{***}&      -77.48\sym{***}\\
+            &                     &                     &                     &     (-3.67)         &     (-3.58)         \\
+Airdate     &                     &                     &                     &      0.0351\sym{***}&      0.0362\sym{***}\\
+            &                     &                     &                     &      (6.37)         &      (6.54)         \\
+Constant    &      1445.1\sym{***}&      1170.9\sym{***}&      1265.4\sym{***}&       730.7\sym{***}&       730.6\sym{***}\\
+            &     (79.84)         &     (32.11)         &     (30.54)         &      (7.47)         &      (7.40)         \\
+Category/Adult Dummies &          No         &          No         &          No         &          No         &         Yes         \\
+\hline
+\(N\)       &       13888         &       13888         &       13888         &       13888         &       13888         \\
+\(R^{2}\)   &       0.085         &       0.328         &       0.339         &       0.341         &       0.344         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
